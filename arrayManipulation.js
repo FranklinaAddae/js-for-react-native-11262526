@@ -8,6 +8,24 @@ function processArray(numbers) {
     });
 }
 
-const inputArray = [6, 7, 8, 9, 12];
-const processedArray = processArray(inputArray);
-console.log(processedArray);
+function formatArrayStrings(strings, numbers) {
+    return strings.map((str, index) => {
+        if (index >= numbers.length) {
+            return str;
+        }
+
+        if (numbers[index] % 2 === 0) {
+            return str.toUpperCase();
+        } else {
+            return str.toLowerCase();
+        }
+    });
+}
+
+// Example usage:
+const strings = ["Franklina", "Javascript", "", "React", "Awesome"];
+const inputNumbers = [1, 2, 3, 4, 5];
+const processedNumbers = processArray(inputNumbers);
+
+const formattedStrings = formatArrayStrings(strings, processedNumbers);
+console.log(formattedStrings); 
