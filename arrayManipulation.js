@@ -22,10 +22,8 @@ function formatArrayStrings(strings, numbers) {
     });
 }
 
-// Example usage:
-const strings = ["Franklina", "Javascript", "", "React", "Awesome"];
+const strings = ["Franklina", "Javascript", "Lina", "React", "Awesome"];
 const inputNumbers = [1, 2, 3, 4, 5];
 const processedNumbers = processArray(inputNumbers);
-
 const formattedStrings = formatArrayStrings(strings, processedNumbers);
 console.log(formattedStrings); 
